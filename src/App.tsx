@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import 'antd/dist/antd.css';
 import './App.css';
+import Login from './pages/login/Login';
+import VerifyEmail from './components/forgotpassword/VerifyEmail';
+import NewPassword from './components/forgotpassword/NewPassword';
+import Admin from "./pages/admin/Admin";
+import Infomation from "./components/infomation/Infomation";
+import Menubar from "./components/menubar/Menubar";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 function App() {
+  const user = true;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/verifyemail" element={<VerifyEmail />} />
+          <Route path="/newpassword" element={<NewPassword />} />
+        </Routes>
+        <Routes>
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin/infomation" element={<Infomation />} />
+          <Route path="/admin/dashboard" element={<Dashboard />} />
+        </Routes>
+      </Router> 
   );
 }
 

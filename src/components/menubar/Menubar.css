@@ -1,0 +1,148 @@
+.menubar-wrapper{
+    width: inherit;
+    height: inherit;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
+    border-radius: 16px 0px 0px 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+  
+.logo{
+    position: absolute;
+    left: calc(50% - 40px);
+    top: 32px;
+}
+
+.menu {
+    position: absolute;
+    top: 150px;
+}
+
+.menu-list{
+    width: 200px;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-items{
+    width: inherit;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 4px 12px 12px;
+    border-radius: 8px;
+    color: #7E7D88;
+    cursor: pointer;
+}
+
+.menu-items:hover {
+    color: #FF7506;
+    background-color: #FFF2E7;
+    border-radius: 0px;
+}
+
+#frame-dashboard{
+    top: 150px;
+}
+
+#frame-1{
+    top: 204px;
+}
+
+#frame-2{
+    top: 258px;
+}
+
+#frame-3{
+    top: 312px;
+}
+
+#frame-4{
+    top: 366px;
+}
+
+#frame-5{
+    top: 420px;
+}
+
+#frame-logout {
+    width: 176px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    background: #FFF2E7;
+    color:#FF7506;
+    position: absolute;
+    top: 480px;
+    left: 12px;
+    padding: 10px;
+}
+
+.menu-icons {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.more-icon{
+    margin-left: 10px;
+    margin-right: 0 !important;
+    text-decoration: none;
+}
+
+.menu-link{
+    text-decoration: none;
+}
+
+.setting-link {
+    color: inherit;
+}
+
+.more-setting {
+    display: inline;
+    position: relative;
+}
+
+.setting-list{ 
+    display: none;
+    position: absolute;
+    top: -12px; 
+    left: 8px;
+    list-style: none;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    filter: drop-shadow(3px 3px 4px rgba(70, 64, 67, 0.1));
+    z-index: 2;
+    border-radius: 0px 12px 12px 0px; 
+}
+
+.setting-items {
+    width: 200px;
+    height: 48px;
+    padding: 12px 16px;
+}
+
+.setting-items:hover:first-child{
+    color: #FF7506;
+    background-color: #FFF2E7;
+    border-radius: 0px 12px 0px 0px; 
+}
+
+.setting-items:hover:last-child{
+    color: #FF7506;
+    background-color: #FFF2E7;
+    border-radius: 0px 0px 12px 0px; 
+}
+
+.setting-items:hover:nth-child(2){
+    color: #FF7506;
+    background-color: #FFF2E7;
+    border-radius: 0px ; 
+}

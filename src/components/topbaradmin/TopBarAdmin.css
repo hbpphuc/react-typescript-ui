@@ -1,0 +1,153 @@
+.topbar-admin {
+    width: inherit;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-title{
+    width: 168px;
+    height: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF9138;
+    margin: 0 24px;
+}
+
+.topbar-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-notification {
+    margin-right: 24px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: relative;
+}
+
+.notification-button{
+    width: 32px;
+    height: 32px;
+    background: #FFF2E7;
+    color: #FFAC6A;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button-active {
+    background: #FF7506;
+    color: #FFFFFF;
+}
+
+.notification {
+    width: 370px;
+    height: 300px;
+    position: absolute;
+    top: 60px;
+    overflow: hidden scroll;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+    border-radius: 10px;
+    z-index: 1;
+    display: none;
+}
+
+.notification::-webkit-scrollbar{
+    display: none;
+}
+
+.noti-title {
+    width: inherit;
+    padding: 9px 24px;
+    margin: 0;
+    background-color: #FF9138;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    position: fixed;
+}
+
+.noti-list{
+    background-color: #FFFFFF;
+    list-style: none;
+    padding: 0 24px;
+    width: 360px;
+    margin-top: 48px;
+}
+
+.noti-items {
+    padding: 16px 0 0;
+    width: 360px;
+    height: 80px;
+}
+
+.separate {
+    display: block;
+    background-color: #D4D4D7;
+    height: 1.5px;
+}
+
+.noti-user {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #BF5805;
+    margin-bottom: 4px;
+}
+
+.noti-timestamp {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535261;
+}
+
+.user-welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 64px;
+}
+
+.img-avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #7E7D88;
+    margin-left: 10px;
+}
+
+.user-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535261;
+    margin: 0;
+    text-decoration: none;
+}
+
+.user-name:hover{
+    color: #FF9138;
+}
