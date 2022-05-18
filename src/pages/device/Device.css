@@ -1,0 +1,11 @@
+.device-wrapper{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    position: absolute;
+    top: 0px;
+    border-radius: 0 12px 12px 0;
+    z-index: -1;
+}

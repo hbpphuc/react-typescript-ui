@@ -3,7 +3,7 @@ import Infomation from '../../components/infomation/Infomation'
 import Menubar from '../../components/menubar/Menubar'
 import TopBarAdmin from '../../components/topbaradmin/TopBarAdmin'
 import Dashboard from '../dashboard/Dashboard'
-import Device from '../device/listdevice/ListDevice'
+import Device from '../device/Device'
 import './Admin.css'
 
 
