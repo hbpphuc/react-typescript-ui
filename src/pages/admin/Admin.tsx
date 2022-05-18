@@ -3,13 +3,15 @@ import Infomation from '../../components/infomation/Infomation'
 import Menubar from '../../components/menubar/Menubar'
 import TopBarAdmin from '../../components/topbaradmin/TopBarAdmin'
 import Dashboard from '../dashboard/Dashboard'
+import Device from '../device/listdevice/ListDevice'
 import './Admin.css'
 
 
 export default function Admin() {  
 
   const [showInfomation, setShowInfomatoin ] = useState<boolean>(false)
-  const [showDashboard, setShowDashboard] = useState<boolean>(true)
+  const [showDashboard, setShowDashboard] = useState<boolean>(false)
+  const [showDevice, setShowDevice] = useState<boolean>(true)
   
   return (
     <div className="admin">
@@ -21,6 +23,7 @@ export default function Admin() {
           <TopBarAdmin/>
           {showInfomation && <Infomation />}
           {showDashboard && <Dashboard />}
+          {showDevice && <Device />}
         </div>
       </div>
     </div>

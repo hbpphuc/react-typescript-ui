@@ -87,7 +87,7 @@ export default function Menubar() {
                 <ul className="menu-list">
                     <li className="menu-items" id="frame-dashboard">
                         <DashboardOutlined className='menu-icons'/>
-                        <Link className='menu-link' to="/admin/dashboard">Dashboard</Link>
+                        <Link className='menu-link' to="">Dashboard</Link>
                     </li>
                     <li className="menu-items" id="frame-1">
                         <DesktopOutlined className='menu-icons'/>

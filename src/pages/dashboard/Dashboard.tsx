@@ -73,9 +73,9 @@ export default function Dashboard() {
             <div className="static-time-selector">
               <span>Xem theo</span>
               <select name="time" id="time" className='time-select' onChange={handleChange}>
-                <option value="ngày">Ngày</option>
-                <option value="tuần">Tuần</option>
-                <option value="tháng">Tháng</option>
+                <option className='time-option' value="ngày">Ngày</option>
+                <option className='time-option' value="tuần">Tuần</option>
+                <option className='time-option' value="tháng">Tháng</option>
               </select>
             </div>
           </div>

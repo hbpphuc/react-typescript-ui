@@ -80,7 +80,7 @@
     background: #FFF2E7;
     color:#FF7506;
     position: absolute;
-    top: 480px;
+    top: 580px;
     left: 12px;
     padding: 10px;
 }
@@ -99,6 +99,12 @@
 
 .menu-link{
     text-decoration: none;
+    color: #7E7D88;
+}
+
+.menu-link:hover{
+    transition: 0s;
+    color: #FF7506 !important;
 }
 
 .setting-link {

@@ -43,7 +43,7 @@
     justify-content: space-between;
     align-items: center;
     width: 186px;
-    height: 100px;
+    height: 120px;
     border-radius: 12px;
     background: #FFFFFF;
     box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
@@ -59,12 +59,12 @@
 }
 
 .type-icon {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8px 12px;
+    margin: 0 8px;
     box-sizing: border-box;
     border-radius: 50%;
     font-size: 22px;
@@ -108,7 +108,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 12px;
+    padding: 0 12px 10px;
 }
 
 .type-quantity {
@@ -147,7 +147,7 @@
     margin: 16px 24px 30px;
     background-color: #FFFFFF;
     border-radius: 12px;
-    height: 403px;
+    height: 484px;
     box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
     display: flex;
     flex-direction: column;
@@ -211,10 +211,17 @@
     font-size: 16px;
     line-height: 24px;
     color: #7E7D88;
-    /* -webkit-appearance:none;
-    appearance: none; */
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' fill='%23FF7506' stroke='%23FF7506' stroke-width='0' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 85% center;
+    -webkit-appearance:none;
+    appearance: none; 
 }
 
+.time-option {
+    
+}
 
 .chart-overview {
     width: 401px;
@@ -337,7 +344,7 @@
     padding: 16px 10px;
     margin-top: 8px;
     width: 353px;
-    height: 244px;
+    height: 342px;
     background: #FFFFFF;
     box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
     border-radius: 12px;
