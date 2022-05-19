@@ -20,7 +20,7 @@ export default function Login() {
                                     type="text"
                                     className="login-input"
                                     id="user"
-                                    value={'lequynhaivan01'}
+                                    value={'baifernP'}
                                     required
                                 />
                             </div>
@@ -34,13 +34,13 @@ export default function Login() {
                                 <Input.Password
                                     className="login-input"
                                     id="password"
-                                    value={'lequynhaivan01'}
+                                    value={'baifernbeauty'}
                                 />
                             </div>
                             <div className="forgot-password">
                                 <Link className='forgot-link' to="/verifyemail">Quên mật khẩu?</Link>  
                             </div>
-                            <button className="login-button">Đăng nhập</button>
+                            <Link to='/admin' className="login-button">Đăng nhập</Link>
                         </form>
                     </div>
                 </div>
