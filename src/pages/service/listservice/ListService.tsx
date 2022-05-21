@@ -1,13 +1,15 @@
-import { PlusSquareFilled } from '@ant-design/icons'
-import { Pagination } from 'antd'
+import { CaretRightFilled, PlusSquareFilled } from '@ant-design/icons'
+import { DatePicker, Pagination } from 'antd'
 import { Link } from 'react-router-dom'
-import './ListDevice.css'
+import moment from 'moment'
+import './ListService.css'
 
 export default function ListDevice() {
+  const dateFormatList = ['DD/MM/YYYY', 'DD/MM/YY']
   return (
-    <div className="listdevice">
-      <p className="listdevice-title">Danh sách thiết bị</p>
-      <div className="listdevice-filter">
+    <div className="listservice">
+      <p className="listservice-title">Danh sách dịch vụ</p>
+      <div className="listservice-filter">
         <div className="filter-status-group">
           <div className="filter-status">
             <p className="filter-status-title">Trạng thái hoạt động</p>
@@ -17,13 +19,15 @@ export default function ListDevice() {
               <option value="all">Ngưng hoạt động</option>
             </select>
           </div>
-          <div className="filter-status">
-            <p className="filter-status-title">Trạng thái kết nối</p>
-            <select name="" id="" className="filter-status-select">
-              <option value="all">Tất cả</option>
-              <option value="active">Kết nối</option>
-              <option value="all">Mất kết nối</option>
-            </select>
+          <div className="filter-date">
+            <p className="filter-status-title">Chọn thời gian</p>
+            <div className="filter-datepicker">
+            <DatePicker defaultValue={moment('10/10/2021', dateFormatList[0])} format={dateFormatList} className = "service-datepicker"/>
+            <span>
+              <CaretRightFilled className="filled-arrowleft"/>
+            </span>
+            <DatePicker defaultValue={moment('18/10/2021', dateFormatList[0])} format={dateFormatList} className = "service-datepicker"/>
+            </div>
           </div>
         </div>
         <div className="filter-key">
@@ -31,47 +35,41 @@ export default function ListDevice() {
           <input type="text" className="search-bar" placeholder='Nhập từ khóa'/>
         </div>
       </div>
-      <div className="listdevice-table">
+      <div className="listservice-table">
         <table className='table-list'>
           <thead>
             <tr>
-              <th style={{width: 103}}>Mã thiết bị</th>
-              <th style={{width: 99}}>Tên thiết bị</th>
-              <th style={{width: 138}}>Địa chỉ IP</th>
-              <th style={{width: 171}}>Trạng thái hoạt động</th>
-              <th style={{width: 145}}>Trạng thái kết nối</th>
-              <th style={{width: 268}}>Dịch vụ sử dụng</th>
-              <th style={{width: 82}}></th>
-              <th style={{width: 106}}></th>
+              <th style={{width: 150}}>Mã dịch vụ</th>
+              <th style={{width: 224}}>Tên dịch vụ</th>
+              <th style={{width: 230}}>Mô tả</th>
+              <th style={{width: 253}}>Trạng thái hoạt động</th>
+              <th style={{width: 125}}></th>
+              <th style={{width: 125}}></th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td id="td-1">KIO_01</td>
               <td id="td-2">Kiosk</td>
-              <td id="td-3">192.168.1.10</td>
+              <td id="td-3">Mô tả dịch vụ</td>
               <td id="td-4"><span className='td-dot' id='tddotbg-1'></span>Hoạt động</td>
-              <td id="td-5"><span className='td-dot' id='tddotbg-2'></span>Mất kết nối</td>
-              <td id="td-6">Khám tim mạch, khám mắ...<br /><a href="#" className='table-link'>Xem thêm</a></td>
               <td id="td-7"><a href="#" className='table-link'>Chi tiết</a></td>
               <td id="td-7"><a href="#" className='table-link'>Cập nhật</a></td>
             </tr>
             <tr>
               <td>KIO_01</td>
               <td>Kiosk</td>
-              <td>192.168.1.10</td>
+              <td>Mô tả dịch vụ</td>
               <td id="td-4"><span className='td-dot' id='tddotbg-2'></span>Ngưng hoạt động</td>
-              <td id="td-5"><span className='td-dot' id='tddotbg-1'></span>Kết nối</td>
-              <td>Khám tim mạch, khám mắ...<br /><a href="#" className='table-link'>Xem thêm</a></td>
               <td><a href="#" className='table-link'>Chi tiết</a></td>
               <td><a href="#" className='table-link'>Cập nhật</a></td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div className="device-addpage">
+      <div className="service-addpage">
         <PlusSquareFilled className='addpage-icon'/>
-        <Link to='' className='addpage-link'>Thêm thiết bị</Link>
+        <Link to='' className='addpage-link'>Thêm dịch vụ</Link>
       </div>
       <div className="pagination">
         <Pagination defaultCurrent={1} total={50} />

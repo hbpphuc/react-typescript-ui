@@ -7,15 +7,15 @@ import EditDevice from './editdevice/EditDevice'
 
 export default function Device() {
 
-  const [showListDevice, setShowListDevice ] = useState<boolean>(false)
+  const [showListDevice, setShowListDevice ] = useState<boolean>(true)
   const [showCreateDevice, setShowCreateDevice ] = useState<boolean>(false)
   const [showDetailDevice, setShowDetailDevice ] = useState<boolean>(false)
-  const [showEditDevice, setShowEditDevice ] = useState<boolean>(true)
+  const [showEditDevice, setShowEditDevice ] = useState<boolean>(false)
 
   return (
     <div className='device-wrapper'>
-        {showCreateDevice && <CreateDevice />}
         {showListDevice && <ListDevice />}
+        {showCreateDevice && <CreateDevice />}
         {showDetailDevice && <DetailDevice />}
         {showEditDevice && <EditDevice />}
     </div>

@@ -1,4 +1,4 @@
-.listdevice{
+.listservice{
     width: 1112px;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     left: 24px;
 }
 
-.listdevice-title {
+.listservice-title {
     height: 36px;
     font-style: normal;
     font-weight: 700;
@@ -17,7 +17,7 @@
     margin: 0 0 16px;
 }
 
-.listdevice-filter{
+.listservice-filter{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,6 +32,33 @@
 .filter-status{
     width: 300px;
     height: 72px;
+}
+
+.filter-date{
+    width: 320px;
+    height: 72px;
+}
+
+.filter-datepicker{
+    width: inherit;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-datepicker{
+    width: 150px;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+}
+
+.filled-arrowleft{
+    font-size: 10px;
 }
 
 .filter-status:first-child{
@@ -102,7 +129,7 @@
     appearance: none; 
 }
 
-.listdevice-table {
+.listservice-table {
     position: absolute;
     top: 144px;
     width: 1112px;
@@ -112,49 +139,51 @@
     background-color: #FFFFFF;
 }
 
-.listdevice-table .table-list {
+.listservice-table .table-list {
     width: 100%;
     border-radius: 12px;
+}
+
+.listservice-table .table-list thead, .listservice-table .table-list th{
+    font-size: 16px;
+    background-color: #FF9138;
+    color: #FFFFFF;
+    padding: 12px 16px;
     text-align: left;
 }
 
-.listdevice-table .table-list thead, .listdevice-table .table-list th{
-    background-color: #FF9138;
-    color: #FFFFFF;
-    padding: 6px 8px;
-}
-
-.listdevice-table .table-list thead:first-child, .listdevice-table .table-list th:first-child{
+.listservice-table .table-list thead:first-child, .listservice-table .table-list th:first-child{
     border-radius: 12px 0 0 0;
 }
 
-.listdevice-table .table-list thead:last-child, .listdevice-table .table-list th:last-child{
+.listservice-table .table-list thead:last-child, .listservice-table .table-list th:last-child{
     border-radius: 0 12px 0 0;
 }
 
-.listdevice-table .table-list body, .listdevice-table .table-list td{
+.listservice-table .table-list body, .listservice-table .table-list td{
+    font-size: 14px;
     color: #686875;
+    padding: 12px 16px;
 }
 
-.listdevice-table .table-list th, .listdevice-table .table-list td{
+.listservice-table .table-list th, .listservice-table .table-list td{
     height: 49px;
     border-right: 1px solid #FFE3CD;
-    padding: 6px 8px;
 }
 
-.listdevice-table .table-list th:last-child, .listdevice-table .table-list td:last-child{
+.listservice-table .table-list th:last-child, .listservice-table .table-list td:last-child{
     border-right: none;
 }
   
-.listdevice-table .table-list tr:nth-child(even){
+.listservice-table .table-list tr:nth-child(even){
     background-color:  #FFF2E7;
 }
 
-.listdevice-table .table-link {
+.listservice-table .table-link {
     text-decoration: underline;
 }
 
-.listdevice-table .td-dot{
+.listservice-table .td-dot{
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -163,15 +192,15 @@
     margin-right: 4px;
 }
 
-.listdevice-table #tddotbg-1{
+.listservice-table #tddotbg-1{
     background-color: #35C75A;
 }
 
-.listdevice-table #tddotbg-2{
+.listservice-table #tddotbg-2{
     background-color: #EC3740;
 }
 
-.pagination{
+.listservice-table .pagination{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -183,7 +212,7 @@
     top: 655px;
 }
 
-.device-addpage{
+.service-addpage{
     display: flex;
     flex-direction: column;
     justify-content: center;
