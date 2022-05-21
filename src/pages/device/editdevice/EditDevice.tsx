@@ -1,99 +1,119 @@
-import { Select } from 'antd'
+import Select from 'antd/lib/select'
 import React from 'react'
-import './CreateDevice.css'
+import './EditDevice.css'
 
-export default function CreateDevice() {
+export default function EditDevice() {
+    const { Option } = Select;
     return (
-        <div className="createdevice">
-            <p className="createdevice-title">Quản lý thiết bị</p>
-            <form action="" method="post" className="createdevice-form">
-                <div className="create-form-frame">
-                    <p className="create-form-title">Thông tin thiết bị</p>
-                    <div className="create-input-wrapper">
-                        <div className="create-input-frame">
-                            <label htmlFor="id" className="create-input-title">
-                                Mã thiết bị: <span className='red-star'>*</span>
+        <div className="editdevice">
+            <p className="editdevice-title">Quản lý thiết bị</p>
+            <form action="" method="post" className="editdevice-form">
+                <div className="edit-form-frame">
+                    <p className="edit-form-title">Thông tin thiết bị</p>
+                    <div className="edit-input-wrapper">
+                        <div className="edit-input-frame">
+                            <label htmlFor="id" className="edit-input-title">
+                                Mã thiết bị: <span className="red-star">*</span>
                             </label>
                             <input
                                 type="text"
                                 name=""
                                 id="id"
+                                value={'KIO_01'}
                                 placeholder="Nhập mã thiết bị"
-                                className="create-input"
+                                className="edit-input"
                             />
                         </div>
-                        <div className="create-input-frame">
-                            <label htmlFor="type" className="create-input-title">
-                                Loại thiết bị: <span className='red-star'>*</span>
+                        <div className="edit-input-frame">
+                            <label htmlFor="type" className="edit-input-title">
+                                Loại thiết bị:{' '}
+                                <span className="red-star">*</span>
                             </label>
                             <select
                                 name=""
                                 id="type"
-                                className="create-input create-select"
+                                className="edit-input edit-select"
                             >
-                                <option value="" disabled selected hidden>Chọn loại thiết bị</option>
-                                <option value="kiosk">Kiosk</option>
+                                <option value="" disabled hidden>
+                                    Chọn loại thiết bị
+                                </option>
+                                <option value="kiosk" selected>
+                                    Kiosk
+                                </option>
                                 <option value="dc">Display counter</option>
                             </select>
                         </div>
-                        <div className="create-input-frame">
-                            <label htmlFor="name" className="create-input-title">
-                                Tên thiết bị: <span className='red-star'>*</span>
+                        <div className="edit-input-frame">
+                            <label htmlFor="name" className="edit-input-title">
+                                Tên thiết bị:{' '}
+                                <span className="red-star">*</span>
                             </label>
                             <input
                                 type="text"
                                 name=""
+                                value={'Kiosk'}
                                 id="name"
                                 placeholder="Nhập tên thiết bị"
-                                className="create-input"
+                                className="edit-input"
                             />
                         </div>
-                        <div className="create-input-frame">
-                            <label htmlFor="username" className="create-input-title">
-                                Tên đăng nhập: <span className='red-star'>*</span>
+                        <div className="edit-input-frame">
+                            <label
+                                htmlFor="username"
+                                className="edit-input-title"
+                            >
+                                Tên đăng nhập:{' '}
+                                <span className="red-star">*</span>
                             </label>
                             <input
                                 type="text"
                                 name=""
+                                value={'baifernP'}
                                 id="username"
                                 placeholder="Nhập tên đăng nhập"
-                                className="create-input"
+                                className="edit-input"
                             />
                         </div>
-                        <div className="create-input-frame">
-                            <label htmlFor="ipadd" className="create-input-title">
-                                Địa chỉ IP: <span className='red-star'>*</span>
+                        <div className="edit-input-frame">
+                            <label htmlFor="ipadd" className="edit-input-title">
+                                Địa chỉ IP: <span className="red-star">*</span>
                             </label>
                             <input
                                 type="text"
+                                value={'128.172.308'}
                                 name=""
                                 id="ipadd"
                                 placeholder="Nhập địa chỉ IP"
-                                className="create-input"
+                                className="edit-input"
                             />
                         </div>
-                        <div className="create-input-frame">
-                            <label htmlFor="password" className="create-input-title">
-                                Mật khẩu: <span className='red-star'>*</span>
+                        <div className="edit-input-frame">
+                            <label
+                                htmlFor="password"
+                                className="edit-input-title"
+                            >
+                                Mật khẩu: <span className="red-star">*</span>
                             </label>
                             <input
                                 type="text"
                                 name=""
+                                value={'CMS'}
                                 id="password"
                                 placeholder="Nhập mật khẩu"
-                                className="create-input"
+                                className="edit-input"
                             />
                         </div>
-                        <div className="create-input-frame">
-                            <label htmlFor="id" className="create-input-title">
-                                Dịch vụ sử dụng: <span className='red-star'>*</span>
+                        <div className="edit-input-frame">
+                            <label htmlFor="id" className="edit-input-title">
+                                Dịch vụ sử dụng:{' '}
+                                <span className="red-star">*</span>
                             </label>
                             <Select
                                 mode="multiple"
                                 placeholder="Chọn dịch vụ sử dụng"
-                                defaultValue={[]}
+                                defaultValue={['1', '2']}
                                 optionLabelProp="label"
-                                className='create-input create-select long-select'
+                                className='edit-input edit-select long-select'
                                 
                             >
                                 <option value="1" label="Khám tim mạch" className='option-hihi'>
@@ -125,12 +145,17 @@ export default function CreateDevice() {
                         </div>
                     </div>
                     <p className="note">
-                        <span className='red-star'>*</span> Là trường thông tin bắt buộc
+                        <span className="red-star">*</span> Là trường thông tin
+                        bắt buộc
                     </p>
                 </div>
-                <div className="create-button-frame">
-                    <button type="submit" className='button button-normal'>Hủy bỏ</button>
-                    <button type="submit" className='button button-active'>Thêm thiết bị</button>
+                <div className="edit-button-frame">
+                    <button type="submit" className="button button-normal">
+                        Hủy bỏ
+                    </button>
+                    <button type="submit" className="button button-active">
+                        Cập nhật
+                    </button>
                 </div>
             </form>
         </div>

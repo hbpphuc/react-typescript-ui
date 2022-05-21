@@ -11,7 +11,7 @@ export default function Admin() {
 
   const [showInfomation, setShowInfomatoin ] = useState<boolean>(false)
   const [showDashboard, setShowDashboard] = useState<boolean>(false)
-  const [showDevice, setShowDevice] = useState<boolean>(true)
+  const [showDevice, setShowDevice] = useState<boolean>(false)
   
   return (
     <div className="admin">

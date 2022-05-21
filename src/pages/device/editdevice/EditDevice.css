@@ -1,4 +1,4 @@
-.createdevice{
+.editdevice{
     width: 1240px;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     left: 24px;
 }
 
-.createdevice-title {
+.editdevice-title {
     height: 36px;
     font-style: normal;
     font-weight: 700;
@@ -17,13 +17,13 @@
     margin: 0 0 16px;
 }
 
-.createdevice-form{
+.editdevice-form{
     width: 1152px;
     height: 550px;
     border-radius: 16px;
 }
 
-.create-form-frame{
+.edit-form-frame{
     width: inherit;
     height: inherit;
     border-radius: 16px;
@@ -31,7 +31,7 @@
     padding: 16px 0;
 }
 
-.create-form-title{
+.edit-form-title{
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -39,7 +39,7 @@
     margin: 0 24px;
 }
 
-.create-input-wrapper{
+.edit-input-wrapper{
     width: inherit;
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +47,7 @@
     padding: 0 24px;
 }
 
-.create-input-frame{
+.edit-input-frame{
     width: 540px;
     height: 76px;
     display: flex;
@@ -56,7 +56,7 @@
     margin-top: 16px;
 }
 
-.create-input-frame:last-child{
+.edit-input-frame:last-child{
     width: inherit;
     height: 76px;
     display: flex;
@@ -64,7 +64,7 @@
     justify-content: space-around;
 }
 
-.create-input-title{
+.edit-input-title{
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -80,12 +80,12 @@
     font-size: 16px;
 }
 
-.create-input{
+.edit-input{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px 270px 10px 12px;
+    padding: 10px 12px 10px 12px;
     background: #FFFFFF;
     border: 2px solid #D4D4D7;
     border-radius: 8px;
@@ -94,11 +94,11 @@
     outline: none;
 }
 
-.create-input::placeholder{
+.edit-input::placeholder{
     color: #A9A9B0;
 }
 
-.create-select{
+.edit-select{
     background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' fill='%23FF7506'/%3E%3Cpath d='M1 1L7 7L13 1H1Z' stroke='%23FF7506' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: 18px 18px;
@@ -107,14 +107,16 @@
     appearance: none;
 }
 
-.create-select:focus-visible{
+.edit-select:focus-visible{
     border: 1.5px solid #FFAC6A;
     background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 7L7 0.999999L1 7' fill='%23FF7506'/%3E%3Cpath d='M13 7L7 0.999999L1 7L13 7Z' stroke='%23FF7506' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
-
 .long-select{
     background-image: none;
+    height: 100px;
+    border: 1.5px solid #FFAC6A;
+    border-radius: 8px;;
 }
 
 .long-select:focus-visible{
@@ -132,7 +134,7 @@
     color: #7E7D88;
 }
 
-.create-button-frame{
+.edit-button-frame{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,4 +168,9 @@
     color: #FF7506;
     background: #FFF2E7;
     border: 1.5px solid #FF9138;
+}
+
+.ant-select-selector{
+    width: 100%;
+    border: none !important;
 }
