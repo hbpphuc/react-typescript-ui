@@ -4,11 +4,10 @@ import { Link } from 'react-router-dom'
 import moment from 'moment'
 import './ListService.css'
 
-export default function ListDevice() {
+export default function ListService() {
   const dateFormatList = ['DD/MM/YYYY', 'DD/MM/YY']
   return (
     <div className="listservice">
-      <p className="listservice-title">Danh sách dịch vụ</p>
       <div className="listservice-filter">
         <div className="filter-status-group">
           <div className="filter-status">

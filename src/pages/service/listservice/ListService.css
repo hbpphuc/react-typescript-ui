@@ -3,18 +3,8 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 104px;
+    top: 172px;
     left: 24px;
-}
-
-.listservice-title {
-    height: 36px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    color: #FF7506;
-    margin: 0 0 16px;
 }
 
 .listservice-filter{
@@ -88,6 +78,7 @@
     width: 300px;
     height: 44px;
     border: 1.5px solid #D4D4D7;
+    outline: none;
     border-radius: 8px;
     font-style: normal;
     font-weight: 400;
@@ -118,6 +109,7 @@
     border: 1.5px solid #D4D4D7;
     border-radius: 8px;
     font-style: normal;
+    outline: none;
     font-weight: 400;
     font-size: 16px;
     color: #535261;
@@ -131,7 +123,7 @@
 
 .listservice-table {
     position: absolute;
-    top: 144px;
+    top: 93px;
     width: 1112px;
     height: 490px;
     filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
@@ -200,7 +192,7 @@
     background-color: #EC3740;
 }
 
-.listservice-table .pagination{
+.listservice .pagination{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -209,7 +201,7 @@
     width: 288px;
     height: 32px;
     left: 840px;
-    top: 655px;
+    top: 595px;
 }
 
 .service-addpage{
@@ -222,7 +214,7 @@
     padding: 12px 4px;
     position: absolute;
     left: 1135px;
-    top: 144px;
+    top: 93px;
     background: #FFF2E7;
     box-shadow: 0px 0px 6px #E7E9F2;
     border-radius: 8px 0px 0px 8px;

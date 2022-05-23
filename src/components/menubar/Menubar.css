@@ -70,20 +70,6 @@
     top: 420px;
 }
 
-#frame-logout {
-    width: 176px;
-    height: 48px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 28px;
-    background: #FFF2E7;
-    color:#FF7506;
-    position: absolute;
-    top: 580px;
-    left: 12px;
-    padding: 10px;
-}
 
 .menu-icons {
     width: 20px;
@@ -151,4 +137,23 @@
     color: #FF7506;
     background-color: #FFF2E7;
     border-radius: 0px ; 
+}
+
+#frame-logout {
+    width: 176px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    background: #FFF2E7;
+    color:#FF7506;
+    position: absolute;
+    top: 580px;
+    left: 12px;
+    padding: 10px;
+}
+
+#frame-logout:hover{
+    border-radius: 8px;
 }

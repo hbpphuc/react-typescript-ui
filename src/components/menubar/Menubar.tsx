@@ -119,10 +119,10 @@ export default function Menubar() {
                     </li>
                 </ul>
                 
-                <a href='#' className="menu-items" id="frame-logout">
+                <Link to='/login' className="menu-items" id="frame-logout">
                     <LoginOutlined className='menu-icons' />
                         Đăng xuất
-                </a>
+                </Link>
             </div>
         </div>
     )

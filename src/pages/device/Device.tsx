@@ -7,7 +7,7 @@ import EditDevice from './editdevice/EditDevice'
 
 export default function Device() {
 
-  const [showListDevice, setShowListDevice ] = useState<boolean>(true)
+  const [showListDevice, setShowListDevice ] = useState<boolean>(false)
   const [showCreateDevice, setShowCreateDevice ] = useState<boolean>(false)
   const [showDetailDevice, setShowDetailDevice ] = useState<boolean>(false)
   const [showEditDevice, setShowEditDevice ] = useState<boolean>(false)

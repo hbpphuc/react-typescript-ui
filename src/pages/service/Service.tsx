@@ -1,20 +1,24 @@
 import React, { useState } from 'react'
+import CreateService from './createservice/CreateService'
+import DetailService from './detailservice/DetailService'
+import EditService from './editservice/EditService'
 import ListService from './listservice/ListService'
 import './Service.css'
 
 export default function Service() {
     
-    const [showListDevice, setShowListDevice ] = useState<boolean>(true)
-    const [showCreateDevice, setShowCreateDevice ] = useState<boolean>(false)
-    const [showDetailDevice, setShowDetailDevice ] = useState<boolean>(false)
-    const [showEditDevice, setShowEditDevice ] = useState<boolean>(true)
+    const [showListService, setShowListService ] = useState<boolean>(false)
+    const [showCreateService, setShowCreateService ] = useState<boolean>(false)
+    const [showDetailService, setShowDetailService ] = useState<boolean>(true)
+    const [showEditService, setShowEditService ] = useState<boolean>(false)
   
     return (
       <div className='service-wrapper'>
-          {showListDevice && <ListService />}
-          {/* {showCreateDevice && <CreateService />}
-          {showDetailDevice && <DetailService  />}
-          {showEditDevice && <EditService  />} */}
+        <p className="service-title">Quản lý dịch vụ</p>
+          {showListService && <ListService />}
+          {showCreateService && <CreateService />}
+          {showDetailService && <DetailService  />}
+          {showEditService && <EditService  />}
       </div>
     )
 }
