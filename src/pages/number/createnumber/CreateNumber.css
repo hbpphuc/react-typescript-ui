@@ -1,0 +1,164 @@
+.createnumber {
+    width: 1192px;
+    height: 604px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 24px;
+    position: absolute;
+    top: 164px;
+    left: 24px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.createnumber-frame {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.createnumber-title {
+    height: 48px;
+    font-family: 'Nunito';
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FF7506;
+    margin-bottom: 20px;
+}
+
+.createnumber-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.createnumber-select-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #535261;
+    margin-bottom: 12px;
+}
+
+.createnumber-select {
+    box-sizing: border-box;
+    padding: 10px 12px;
+    width: 400px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    outline: none;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #535261;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' fill='%23FF7506'/%3E%3Cpath d='M1 1L7 7L13 1H1Z' stroke='%23FF7506' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.createnumber-select:focus-visible {
+    border: 1.5px solid #FFAC6A;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 7L7 0.999999L1 7' fill='%23FF7506'/%3E%3Cpath d='M13 7L7 0.999999L1 7L13 7Z' stroke='%23FF7506' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.createnumber-button-group {
+    width: 262px;
+    height: 48px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.createnumber-button {
+    box-sizing: border-box;
+    padding: 10px 24px;
+    width: 115px;
+    height: 48px;
+    border: 1.5px solid #FF9138;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-cancel {
+    background-color: #FFF2E7;
+    color: #FF9138;
+}
+
+.button-submit {
+    color: #FFF2E7;
+    background-color: #FF9138;
+}
+
+.modal-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);/* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);/* Black w/ opacity */
+    -webkit-animation-name: fadeIn;/* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    z-index: 5;
+}
+
+.modal-wrapper-close {
+    width: 100%;
+    height: 40px;
+    text-align: right;
+}
+
+.wrapper-close-button {
+    width: 40px;
+    height: 40px;
+    margin-top: 16px;
+    margin-right: 16px;
+    border: none;
+    outline: none;
+    background-color: #999999;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 6L6 18' stroke='%23FFFFFF' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6 6L18 18' stroke='%23FFFFFF' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 8px;
+}
+
+.wrapper-close-button:hover,
+.wrapper-close-button:focus {
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

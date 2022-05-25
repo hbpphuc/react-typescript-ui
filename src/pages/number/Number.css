@@ -1,0 +1,24 @@
+.number-wrapper{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    position: absolute;
+    top: 0px;
+    border-radius: 0 12px 12px 0;
+    z-index: -1;
+}
+
+.number-title {
+    height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FF7506;
+    margin: 0 0 16px;
+    position: absolute;
+    top: 104px;
+    left: 24px;
+}

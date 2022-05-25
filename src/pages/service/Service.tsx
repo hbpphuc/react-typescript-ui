@@ -9,8 +9,8 @@ export default function Service() {
     
     const [showListService, setShowListService ] = useState<boolean>(false)
     const [showCreateService, setShowCreateService ] = useState<boolean>(false)
-    const [showDetailService, setShowDetailService ] = useState<boolean>(true)
-    const [showEditService, setShowEditService ] = useState<boolean>(false)
+    const [showDetailService, setShowDetailService ] = useState<boolean>(false)
+    const [showEditService, setShowEditService ] = useState<boolean>(true)
   
     return (
       <div className='service-wrapper'>

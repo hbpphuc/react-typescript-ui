@@ -5,6 +5,7 @@ import TopBarAdmin from '../../components/topbaradmin/TopBarAdmin'
 import Dashboard from '../dashboard/Dashboard'
 import Device from '../device/Device'
 import Service from '../service/Service'
+import Number from '../number/Number'
 import './Admin.css'
 
 
@@ -13,7 +14,8 @@ export default function Admin() {
   const [showInfomation, setShowInfomatoin ] = useState<boolean>(false)
   const [showDashboard, setShowDashboard] = useState<boolean>(false)
   const [showDevice, setShowDevice] = useState<boolean>(false)
-  const [showService, setShowService] = useState<boolean>(true)
+  const [showService, setShowService] = useState<boolean>(false)
+  const [showNumber, setShowNumber] = useState<boolean>(true)
   
   return (
     <div className="admin">
@@ -27,6 +29,7 @@ export default function Admin() {
           {showDashboard && <Dashboard />}
           {showDevice && <Device />}
           {showService && <Service />}
+          {showNumber && <Number />}
         </div>
       </div>
     </div>

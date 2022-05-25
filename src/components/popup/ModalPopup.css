@@ -1,0 +1,120 @@
+.modalpopup {
+    width: 469px;
+    height: 385px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    position: absolute;
+    left: 50%;
+    top: 18%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.7s;
+    animation-name: slideIn;
+    animation-duration: 0.7s;
+}
+
+.modalpopup-close {
+    width: 100%;
+    height: 40px;
+    text-align: right;
+}
+
+.close-button {
+    width: 24px;
+    height: 24px;
+    margin-top: 16px;
+    margin-right: 16px;
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 6L6 18' stroke='%23FF9138' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6 6L18 18' stroke='%23FF9138' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.close-button:hover,
+.close-button:focus {
+    transform: scale(1.2);
+}
+
+.modalpopup-top {
+    width: 100%;
+    height: 235px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.modalpopup-top-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #535261;
+    margin-bottom: 24px;
+}
+
+.modalpopup-top-content {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 60px;
+    color: #FF7506;
+    margin-bottom: 24px;
+}
+
+.modalpopup-top-note {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #282739;
+}
+
+.modalpopup-bottom {
+    width: 100%;
+    border-radius: 0 0 24px 24px;
+    height: 110px;
+    background-color: #FF9138;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    padding: 16px 0;
+}
+
+.modalpopup-bottom-note {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 67px;
+}
+
+.modalpopup-bottom-note span:first-child {
+    width: 150px;
+}
+
+.modalpopup-bottom-note span:last-child {
+    width: 184px;
+}
+
+/* Add Animation */
+
+@keyframes slideIn {
+    from {
+        top: -400px;
+        opacity: 0
+    }
+
+    to {
+        top: 18%;
+        opacity: 1
+    }
+}

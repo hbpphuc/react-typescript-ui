@@ -1,0 +1,234 @@
+.listnumber{
+    width: 1112px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 156px;
+    left: 24px;
+}
+
+.listnumber-filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-items{
+    width: 154px;
+    height: 72px;
+    margin-right: 24px;
+}
+
+.filter-title{
+    height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282739;
+    margin: 4px 0;
+}
+
+.filter-select{
+    box-sizing: border-box;
+    padding: 10px 12px;
+    width: 154px;
+    height: 44px;
+    border: 1.5px solid #D4D4D7;
+    outline: none;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #535261;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' fill='%23FF7506' stroke='%23FF7506' stroke-width='0' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    -webkit-appearance:none;
+    appearance: none; 
+}
+
+.filter-items-date{
+    width: 320px;
+    height: 72px;
+    margin-right: 18px;
+}
+
+.filter-datepicker{
+    width: inherit;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filled-arrowleft{
+    font-size: 10px;
+}
+
+.number-datepicker{
+    width: 150px;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+}
+
+.filter-key{
+    width: 240px;
+    height: 72px;
+}
+
+.search-bar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    width: 240px;
+    height: 44px;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+    font-style: normal;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #535261;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z' stroke='%23FF7506' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17.5 17.5L13.875 13.875' stroke='%23FF7506' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    -webkit-appearance:none;
+    appearance: none; 
+}
+
+.listnumber-table {
+    position: absolute;
+    top: 93px;
+    width: 1112px;
+    height: 490px;
+    filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+
+.listnumber-table .table-list {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.listnumber-table .table-list thead, .listnumber-table .table-list th{
+    font-size: 16px;
+    background-color: #FF9138;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.listnumber-table .table-list thead:first-child, .listnumber-table .table-list th:first-child{
+    border-radius: 12px 0 0 0;
+}
+
+.listnumber-table .table-list thead:last-child, .listnumber-table .table-list th:last-child{
+    border-radius: 0 12px 0 0;
+}
+
+.listnumber-table .table-list body, .listnumber-table .table-list td{
+    font-size: 14px;
+    color: #686875;
+    padding: 12px 16px;
+}
+
+.listnumber-table .table-list th, .listnumber-table .table-list td{
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.listnumber-table .table-list th:last-child, .listnumber-table .table-list td:last-child{
+    border-right: none;
+}
+  
+.listnumber-table .table-list tr:nth-child(even){
+    background-color:  #FFF2E7;
+}
+
+.listnumber-table .table-link {
+    text-decoration: underline;
+}
+
+.listnumber-table .td-dot{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #7E7D88;
+    margin-right: 4px;
+}
+
+.listnumber-table #tddotbg-1{
+    background-color: #4277FF;
+}
+
+.listnumber-table #tddotbg-2{
+    background-color: #EC3740;
+}
+
+.listnumber .pagination{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 288px;
+    height: 32px;
+    left: 840px;
+    top: 595px;
+}
+
+.number-addpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 94px;
+    padding: 12px 4px;
+    position: absolute;
+    left: 1135px;
+    top: 93px;
+    background: #FFF2E7;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px 0px 0px 8px;
+    cursor: pointer;
+}
+
+.addpage-icon {
+    color: #FF9138;
+    font-size: 28px;
+}
+
+.addpage-link{
+    text-decoration: none;
+    color: #FF9138;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    margin: 4px 0;
+    text-align: center;
+}
+
+.addpage-link:hover{
+    color: #FF9138;
+}
