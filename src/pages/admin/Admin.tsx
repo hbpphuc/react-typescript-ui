@@ -7,6 +7,7 @@ import Device from '../device/Device'
 import Service from '../service/Service'
 import Number from '../number/Number'
 import './Admin.css'
+import Report from '../report/Report'
 
 
 export default function Admin() {  
@@ -15,7 +16,8 @@ export default function Admin() {
   const [showDashboard, setShowDashboard] = useState<boolean>(false)
   const [showDevice, setShowDevice] = useState<boolean>(false)
   const [showService, setShowService] = useState<boolean>(false)
-  const [showNumber, setShowNumber] = useState<boolean>(true)
+  const [showNumber, setShowNumber] = useState<boolean>(false)
+  const [showReport, setShowReport] = useState<boolean>(true)
   
   return (
     <div className="admin">
@@ -30,6 +32,7 @@ export default function Admin() {
           {showDevice && <Device />}
           {showService && <Service />}
           {showNumber && <Number />}
+          {showReport && <Report />}
         </div>
       </div>
     </div>
