@@ -1,0 +1,88 @@
+.history-wrapper{
+    width: inherit;
+    height: calc(100% - 104px);
+    position: absolute;
+    top: 104px;
+    border-radius: 0px 0px 16px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.role-heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.history-title {
+    height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FF7506;
+    margin: 0 24px;
+}
+
+.history-filter{
+    width: 1112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+.history-filter-frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.filter-label{
+    width: auto;
+    height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282739;
+}
+
+.filter-select {
+    box-sizing: border-box;
+    padding: 10px 12px;
+    width: 300px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    outline: none;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #535261;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' fill='%23FF7506'/%3E%3Cpath d='M1 1L7 7L13 1H1Z' stroke='%23FF7506' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.filter-select:focus-visible {
+    border: 1.5px solid #FFAC6A;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 7L7 0.999999L1 7' fill='%23FF7506'/%3E%3Cpath d='M13 7L7 0.999999L1 7L13 7Z' stroke='%23FF7506' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.search-bar{
+    padding-right: 36px;
+}
+
+.history-content{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 16px 0;
+}

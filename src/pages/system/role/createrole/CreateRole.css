@@ -1,0 +1,152 @@
+.create-role{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.create-role-form{
+    width: 1192px;
+    height: 534px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+    padding: 16px 24px
+}
+
+.form-title{
+    height: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FF7506;
+    margin-bottom: 12px;
+}
+
+.form-input-frame{
+    width: 100%;
+    height: calc(100% - 42px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-input{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #282739;
+    margin: 10px 0;
+}
+
+.input{
+    box-sizing: border-box;
+    padding: 10px 12px 10px 12px;
+    width: 560px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+}
+
+.area {
+    width: 560px;
+    height: 160px !important;
+    padding: 10px 12px 10px 12px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form-select{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+}
+
+.form-select-wrapper{
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 16px 24px;
+    background: #FFF2E7;
+    border-radius: 8px;
+}
+
+.select-frame{
+    width: 100%;
+    height: max-content;
+    margin-bottom: 12px;
+}
+
+.select-wrapper{
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+}
+
+.create-role-checkbox{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    color: #4277FF;
+    border: 2px solid #4277FF;
+    border-radius: 4px;
+    transform: translateY(-0.075em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.create-role-checkbox::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    background-color: #4277FF;
+}
+
+.create-role-checkbox:checked::before{
+    transform: scale(1);
+}
+
+.select-label{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #535261;
+    margin-left: 8px;
+}
+
+.create-role-button{
+    width: 326px;
+    height: 48px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

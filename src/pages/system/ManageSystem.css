@@ -1,0 +1,9 @@
+.managesystem-wrapper{
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    box-shadow: 0px 4px 6px rgb(219 219 219 / 50%);
+    border-radius: 0px 16px 16px 0px;
+}

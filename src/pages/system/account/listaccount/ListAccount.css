@@ -1,0 +1,142 @@
+.list-account{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-account-table{
+    width: 1112px;
+    height: inherit;
+    margin-left: 24px;
+}
+
+.account-table{
+    width: 1112px;
+    height: 490px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
+    border-radius: 12px;
+}
+
+.account-table .table-list {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.account-table .table-list thead, .account-table .table-list th{
+    font-size: 16px;
+    background-color: #FF9138;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.account-table .table-list thead:first-child, .account-table .table-list th:first-child{
+    border-radius: 12px 0 0 0;
+}
+
+.account-table .table-list thead:last-child, .account-table .table-list th:last-child{
+    border-radius: 0 12px 0 0;
+}
+
+.account-table .table-list body, .account-table .table-list td{
+    font-size: 14px;
+    color: #686875;
+    padding: 12px 16px;
+}
+
+.account-table .table-list th, .account-table .table-list td{
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.account-table .table-list th:last-child, .account-table .table-list td:last-child{
+    border-right: none;
+}
+  
+.account-table .table-list tr:nth-child(even){
+    background-color:  #FFF2E7;
+}
+
+.account-table .table-link {
+    text-decoration: underline;
+}
+
+.account-table .td-dot{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #7E7D88;
+    margin-right: 4px;
+}
+
+.account-table #tddotbg-1{
+    background-color: #35C75A;
+}
+
+.account-table #tddotbg-2{
+    background-color: #EC3740;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list-account-button{
+    width: 80px;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.account-add-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 94px;
+    padding: 12px 4px;
+    background: #FFF2E7;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px 0px 0px 8px;
+    cursor: pointer;
+}
+
+.add-icon {
+    color: #FF9138;
+    font-size: 28px;
+}
+
+.add-link{
+    text-decoration: none;
+    color: #FF9138;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    margin: 4px 0;
+}
+
+.add-link:hover{
+    color: #FF9138;
+}

@@ -1,0 +1,50 @@
+.role-wrapper{
+    width: inherit;
+    height: calc(100% - 104px);
+    position: absolute;
+    top: 104px;
+    border-radius: 0px 0px 16px 0px;
+}
+
+.role-heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.role-title {
+    height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FF7506;
+    margin: 0 24px;
+}
+
+.role-search-frame{
+    position: absolute;
+    right: 104px;
+}
+
+.search-label{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #282739;
+    margin-bottom: 4px;
+}
+
+.search-bar{
+    padding-right: 36px;
+}
+
+.role-content{
+    width: 100%;
+    height: calc(100% - 69px);
+    position: absolute;
+    border-radius: 0 0 16px 0;
+    top: 69px;
+}
+
+

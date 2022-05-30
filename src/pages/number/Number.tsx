@@ -8,8 +8,7 @@ export default function Number() {
     
     const [showListNumber, setShowListNumber ] = useState<boolean>(false)
     const [showCreateNumber, setShowCreateNumber ] = useState<boolean>(false)
-    const [showDetailNumber, setShowDetailNumber ] = useState<boolean>(true)
-    const [showEditNumber, setShowEditNumber ] = useState<boolean>(false)
+    const [showDetailNumber, setShowDetailNumber ] = useState<boolean>(false)
   
     return (
       <div className='number-wrapper'>
@@ -17,7 +16,6 @@ export default function Number() {
           {showListNumber && <ListNumber />}
           {showCreateNumber && <CreateNumber />}
           {showDetailNumber && <DetailNumber  />}
-          {/* {showEditNumber && <EditNumber  />} */}
       </div>
     )
 }

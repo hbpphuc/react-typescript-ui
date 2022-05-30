@@ -6,19 +6,18 @@ import ListService from './listservice/ListService'
 import './Service.css'
 
 export default function Service() {
-    
-    const [showListService, setShowListService ] = useState<boolean>(false)
-    const [showCreateService, setShowCreateService ] = useState<boolean>(false)
-    const [showDetailService, setShowDetailService ] = useState<boolean>(false)
-    const [showEditService, setShowEditService ] = useState<boolean>(true)
-  
+    const [showListService, setShowListService] = useState<boolean>(false)
+    const [showCreateService, setShowCreateService] = useState<boolean>(false)
+    const [showDetailService, setShowDetailService] = useState<boolean>(false)
+    const [showEditService, setShowEditService] = useState<boolean>(true)
+
     return (
-      <div className='service-wrapper'>
-        <p className="service-title">Quản lý dịch vụ</p>
-          {showListService && <ListService />}
-          {showCreateService && <CreateService />}
-          {showDetailService && <DetailService  />}
-          {showEditService && <EditService  />}
-      </div>
+        <div className="service-wrapper">
+            <p className="service-title">Quản lý dịch vụ</p>
+            {showListService && <ListService />}
+            {showCreateService && <CreateService />}
+            {showDetailService && <DetailService />}
+            {showEditService && <EditService />}
+        </div>
     )
 }
