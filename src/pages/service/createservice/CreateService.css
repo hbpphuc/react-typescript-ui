@@ -95,9 +95,9 @@
 }
 
 .createservice-rule-checkbox{
-    appearance: none;
+    /* appearance: none;
     -webkit-appearance: none;
-    -moz-appearance: none;
+    -moz-appearance: none; */
     width: 20px;
     height: 20px;
     color: #4277FF;

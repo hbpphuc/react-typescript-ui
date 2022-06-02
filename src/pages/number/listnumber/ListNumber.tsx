@@ -14,7 +14,7 @@ export default function ListNumber() {
                         <p className="filter-title">
                             Tên dịch vụ
                         </p>
-                        <select name="" id="" className="filter-select">
+                        <select name="" id="" className="number-filter-select">
                             <option value="all">Tất cả</option>
                             <option value="1">Khám sản phụ khoa</option>
                             <option value="2">Khám tai mũi họng</option>
@@ -27,7 +27,7 @@ export default function ListNumber() {
                         <p className="filter-title">
                             Tình trạng
                         </p>
-                        <select name="" id="" className="filter-select">
+                        <select name="" id="" className="number-filter-select">
                             <option value="all" selected>Tất cả</option>
                             <option value="waiting">Đang chờ</option>
                             <option value="used">Đã sử dụng</option>
@@ -38,7 +38,7 @@ export default function ListNumber() {
                         <p className="filter-title">
                             Nguồn cấp
                         </p>
-                        <select name="" id="" className="filter-select">
+                        <select name="" id="" className="number-filter-select">
                             <option value="all">Tất cả</option>
                             <option value="kiosk">Kiosk</option>
                             <option value="system">Hệ thống</option>

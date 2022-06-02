@@ -9,6 +9,7 @@ import Login from './pages/login/Login';
 import VerifyEmail from './components/forgotpassword/VerifyEmail';
 import NewPassword from './components/forgotpassword/NewPassword';
 import Admin from "./pages/admin/Admin";
+import Infomation from "./components/infomation/Infomation";
 import Dashboard from "./pages/dashboard/Dashboard";
 import Device from "./pages/device/Device";
 import Service from "./pages/service/Service";
@@ -40,7 +41,7 @@ function App() {
       <Router>
 
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/verifyemail" element={<VerifyEmail />} />
           <Route path="/newpassword" element={<NewPassword />} />
         </Routes>
@@ -48,6 +49,8 @@ function App() {
         <Routes>
           <Route path="/admin" element={<Admin />} >
           
+            <Route path="infomation" element={<Infomation />} />
+
             <Route path="dashboard" element={<Dashboard />} />
 
             <Route path="device" element={<Device />} >

@@ -4,10 +4,6 @@ import { Link } from 'react-router-dom'
 import './TopBarAdmin.css'
 
 export default function TopBarAdmin() {
-
-    const [showInfomation, setShowInfomatoin ] = useState(false)
-    
-
     const handleNoti = () => {
         const btn: any = document.querySelector(".notification-button")
         const notiDisplay: any = document.querySelector(".notification")
@@ -60,7 +56,7 @@ export default function TopBarAdmin() {
                 <div className="user-link">
                     Xin chào
                     <br />
-                    <Link to='' className='user-name' onClick={() => console.log(!showInfomation)}>Baifern Pimchanok</Link>
+                    <Link to='infomation' className='user-name'>Baifern Pimchanok</Link>
                 </div>
             </div>
         </div>
