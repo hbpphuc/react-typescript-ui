@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Outlet } from 'react-router-dom'
 import CreateService from './createservice/CreateService'
 import DetailService from './detailservice/DetailService'
 import EditService from './editservice/EditService'
@@ -6,18 +7,10 @@ import ListService from './listservice/ListService'
 import './Service.css'
 
 export default function Service() {
-    const [showListService, setShowListService] = useState<boolean>(false)
-    const [showCreateService, setShowCreateService] = useState<boolean>(false)
-    const [showDetailService, setShowDetailService] = useState<boolean>(false)
-    const [showEditService, setShowEditService] = useState<boolean>(true)
-
     return (
         <div className="service-wrapper">
             <p className="service-title">Quản lý dịch vụ</p>
-            {showListService && <ListService />}
-            {showCreateService && <CreateService />}
-            {showDetailService && <DetailService />}
-            {showEditService && <EditService />}
+            <Outlet />
         </div>
     )
 }

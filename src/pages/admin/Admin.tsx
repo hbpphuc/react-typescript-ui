@@ -9,6 +9,7 @@ import Number from '../number/Number'
 import './Admin.css'
 import Report from '../report/Report'
 import ManageSystem from '../system/ManageSystem'
+import { Outlet } from 'react-router-dom'
 
 
 export default function Admin() {  
@@ -29,13 +30,7 @@ export default function Admin() {
           </div>
         <div className="admin-content">
           <TopBarAdmin/>
-          {showInfomation && <Infomation />}
-          {showDashboard && <Dashboard />}
-          {showDevice && <Device />}
-          {showService && <Service />}
-          {showNumber && <Number />}
-          {showReport && <Report />}
-          {showManageSystem && <ManageSystem />}
+          <Outlet />
         </div>
       </div>
     </div>

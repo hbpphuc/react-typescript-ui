@@ -33,9 +33,9 @@ export default function ListAccount() {
                                     Hoạt động
                                 </td>
                                 <td id="td-7">
-                                    <a href="#" className="table-link">
+                                    <Link to="edit" className="table-link">
                                         Cập nhật
-                                    </a>
+                                    </Link>
                                 </td>
                             </tr>
                             <tr>
@@ -49,9 +49,9 @@ export default function ListAccount() {
                                     Ngưng hoạt động
                                 </td>
                                 <td id="td-7">
-                                    <a href="#" className="table-link">
+                                    <Link to="edit" className="table-link">
                                         Cập nhật
-                                    </a>
+                                    </Link>
                                 </td>
                             </tr>
                         </tbody>
@@ -64,7 +64,7 @@ export default function ListAccount() {
             <div className="list-account-button">
                 <div className="account-add-button">
                     <PlusSquareFilled className="add-icon" />
-                    <Link to="" className="add-link">
+                    <Link to="create" className="add-link">
                         Thêm tài khoản
                     </Link>
                 </div>

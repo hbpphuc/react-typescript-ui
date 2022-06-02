@@ -180,12 +180,12 @@ export default function DetailService() {
             <div className="detailservice-button-group">
                 <div className="detailservice-button">
                     <EditFilled className='detailservice-icon'/>
-                    <Link to="" className="detailservice-link">Cập nhật danh sách</Link>
+                    <Link to="/admin/service/edit" className="detailservice-link">Cập nhật danh sách</Link>
                 </div>
                 <span className="line"></span>
                 <div className="detailservice-button">
                     <RollbackOutlined className='detailservice-icon'/>
-                    <Link to="" className="detailservice-link">Quay lại</Link>
+                    <Link to="/admin/service" className="detailservice-link">Quay lại</Link>
                 </div>
             </div>
         </div>

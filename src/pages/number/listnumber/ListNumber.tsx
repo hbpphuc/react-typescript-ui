@@ -107,9 +107,9 @@ export default function ListNumber() {
                                 Kiosk
                             </td>
                             <td id="td-7">
-                                <a href="#" className="table-link">
+                                <Link to="detail" className="table-link">
                                     Chi tiết
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr className="value-all" id='value-used'>
@@ -126,9 +126,9 @@ export default function ListNumber() {
                                 Kiosk
                             </td>
                             <td id="td-7">
-                                <a href="#" className="table-link">
+                                <Link to="detail" className="table-link">
                                     Chi tiết
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr className="value-all" id='value-skip'>
@@ -145,9 +145,9 @@ export default function ListNumber() {
                                 Kiosk
                             </td>
                             <td id="td-7">
-                                <a href="#" className="table-link">
+                                <Link to="detail" className="table-link">
                                     Chi tiết
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                     </tbody>
@@ -155,7 +155,7 @@ export default function ListNumber() {
             </div>
             <div className="number-addpage">
                 <PlusSquareFilled className="addpage-icon" />
-                <Link to="" className="addpage-link">
+                <Link to="create" className="addpage-link">
                     Cấp số mới
                 </Link>
             </div>

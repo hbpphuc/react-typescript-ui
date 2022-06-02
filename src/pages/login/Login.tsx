@@ -20,7 +20,6 @@ export default function Login() {
                                     type="text"
                                     className="login-input"
                                     id="user"
-                                    value={'baifernP'}
                                     required
                                 />
                             </div>
@@ -34,7 +33,6 @@ export default function Login() {
                                 <Input.Password
                                     className="login-input"
                                     id="password"
-                                    value={'baifernbeauty'}
                                 />
                             </div>
                             <div className="forgot-password">

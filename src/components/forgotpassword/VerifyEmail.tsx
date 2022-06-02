@@ -25,7 +25,7 @@ export default function ForgotPassword() {
                                 />
                             </div>
                             <div className="forgot-button-group">
-                                <Link to='/login' className="forgot-button button-normal ">Hủy</Link>
+                                <Link to='/' className="forgot-button button-normal ">Hủy</Link>
                                 <Link to='/newpassword' className="forgot-button button-active">Tiếp tục</Link>
                             </div>
                         </form>

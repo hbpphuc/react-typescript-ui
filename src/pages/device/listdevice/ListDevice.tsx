@@ -53,8 +53,8 @@ export default function ListDevice() {
               <td id="td-4"><span className='td-dot' id='tddotbg-1'></span>Hoạt động</td>
               <td id="td-5"><span className='td-dot' id='tddotbg-2'></span>Mất kết nối</td>
               <td id="td-6">Khám tim mạch, khám mắ...<br /><a href="#" className='table-link'>Xem thêm</a></td>
-              <td id="td-7"><a href="#" className='table-link'>Chi tiết</a></td>
-              <td id="td-7"><a href="#" className='table-link'>Cập nhật</a></td>
+              <td><Link to="detail" className='table-link'>Chi tiết</Link></td>
+              <td><Link to="edit" className='table-link'>Cập nhật</Link></td>
             </tr>
             <tr>
               <td>KIO_01</td>
@@ -63,15 +63,15 @@ export default function ListDevice() {
               <td id="td-4"><span className='td-dot' id='tddotbg-2'></span>Ngưng hoạt động</td>
               <td id="td-5"><span className='td-dot' id='tddotbg-1'></span>Kết nối</td>
               <td>Khám tim mạch, khám mắ...<br /><a href="#" className='table-link'>Xem thêm</a></td>
-              <td><a href="#" className='table-link'>Chi tiết</a></td>
-              <td><a href="#" className='table-link'>Cập nhật</a></td>
+              <td><Link to="detail" className='table-link'>Chi tiết</Link></td>
+              <td><Link to="edit" className='table-link'>Cập nhật</Link></td>
             </tr>
           </tbody>
         </table>
       </div>
       <div className="device-addpage">
         <PlusSquareFilled className='addpage-icon'/>
-        <Link to='' className='addpage-link'>Thêm thiết bị</Link>
+        <Link to='create' className='addpage-link'>Thêm thiết bị</Link>
       </div>
       <div className="pagination">
         <Pagination defaultCurrent={1} total={50} />

@@ -7,7 +7,7 @@ import './ManageSystem.css'
 export default function ManageSystem() {
   const [showRole, setShowRole] = useState(false)
   const [showAccount, setShowAccount] = useState(false)
-  const [showHistory, setShowHistory] = useState(false)
+  const [showHistory, setShowHistory] = useState(true)
   return (
     <div className='managesystem-wrapper'>
        {showRole && <Role />}

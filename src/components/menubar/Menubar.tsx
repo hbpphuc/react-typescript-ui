@@ -87,33 +87,39 @@ export default function Menubar() {
                 <ul className="menu-list">
                     <li className="menu-items" id="frame-dashboard">
                         <DashboardOutlined className='menu-icons'/>
-                        <Link className='menu-link' to="">Dashboard</Link>
+                        <Link className='menu-link' to="dashboard">Dashboard</Link>
                     </li>
                     <li className="menu-items" id="frame-1">
                         <DesktopOutlined className='menu-icons'/>
-                        Thiết bị
+                        <Link className='menu-link' to="device">Thiết bị</Link>
                     </li>
                     <li className="menu-items" id="frame-2">
                         <CommentOutlined className='menu-icons'/>
-                        Dịch vụ
+                        <Link className='menu-link' to="service">Dịch vụ</Link>
                     </li>
                     <li className="menu-items" id="frame-3">
                         <NumberOutlined className='menu-icons'/>
-                        Cấp số
+                        <Link className='menu-link' to="number">Cấp số</Link>
                     </li>
                     <li className="menu-items" id="frame-4">
                         <BarChartOutlined className='menu-icons' />
-                        Báo cáo
+                        <Link className='menu-link' to="report">Báo cáo</Link>
                     </li>
                     <li className="menu-items" id="frame-5">
                         <SettingOutlined className='menu-icons' />
                         Cài đặt hệ thống
-                        <a href="#" className='setting-link' onClick={handleDisplay}><MoreOutlined className='menu-icons more-icon'/></a>
+                        <span className='setting-link' onClick={handleDisplay}><MoreOutlined className='menu-icons more-icon'/></span>
                         <div className="more-setting">
                             <ul className='setting-list'>
-                                <li className="setting-items">Quản lý vai trò</li>
-                                <li className="setting-items">Quản lý người dùng</li>
-                                <li className="setting-items">Nhật ký người dùng</li>
+                                <li className="setting-items">
+                                    <Link to="role" className='menu-link'>Quản lý vai trò</Link>
+                                </li>
+                                <li className="setting-items">
+                                    <Link to="account" className='menu-link'>Quản lý người dùng</Link>
+                                </li>
+                                <li className="setting-items">
+                                    <Link to="history" className='menu-link'>Nhật ký người dùng</Link>
+                                </li>
                             </ul>
                         </div>
                     </li>

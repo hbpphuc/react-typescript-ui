@@ -25,9 +25,9 @@ export default function ListRole() {
                                 hợp số liệu
                             </td>
                             <td id="td-4">
-                                <a href="#" className="table-link">
+                                <Link to="edit" className="table-link">
                                     Cập nhật
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                         <tr>
@@ -38,9 +38,9 @@ export default function ListRole() {
                                 mắc cho khách hàng
                             </td>
                             <td>
-                                <a href="#" className="table-link">
+                                <Link to="edit" className="table-link">
                                     Cập nhật
-                                </a>
+                                </Link>
                             </td>
                         </tr>
                     </tbody>
@@ -49,7 +49,7 @@ export default function ListRole() {
             <div className="list-role-button">
                 <div className="role-add-button">
                     <PlusSquareFilled className="add-icon" />
-                    <Link to="" className="add-link">
+                    <Link to="create" className="add-link">
                         Thêm vai trò
                     </Link>
                 </div>

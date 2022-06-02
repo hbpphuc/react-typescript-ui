@@ -109,7 +109,7 @@ export default function DetailDevice() {
             </div>
             <div className="device-updatepage">
                 <EditOutlined className="updatepage-icon" />
-                <Link to="" className="updatepage-link">
+                <Link to="/admin/device/edit" className="updatepage-link">
                     Cập nhật thiết bị
                 </Link>
             </div>

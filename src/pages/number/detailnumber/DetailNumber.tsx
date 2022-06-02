@@ -55,7 +55,7 @@ export default function DetailNumber() {
         <div className="detailnumber-button">
             <div className="detailnumber-button-wrapper">
                 <RollbackOutlined className='detailnumber-icon'/>
-                <Link to="" className="detailnumber-link">Quay lại</Link>
+                <Link to="/admin/number" className="detailnumber-link">Quay lại</Link>
             </div>
         </div>
     </div>
