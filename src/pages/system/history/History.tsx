@@ -9,7 +9,7 @@ export default function History() {
     return (
         <div className="history-wrapper">
             <div className="history-heading">
-                <p className="history-title">Danh sách Tài khoản</p>
+                <p className="history-title">Danh sách lịch sử</p>
                 <div className="history-filter">
                     <div className="history-filter-frame">
                         <label htmlFor="role" className="filter-label">
