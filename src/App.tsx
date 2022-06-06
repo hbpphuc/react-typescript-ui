@@ -84,6 +84,7 @@ function App() {
             <Route path="account" element={<Account />} >
               <Route path="" element={<ListAccount/>} />
               <Route path="create" element={<CreateAccount/>} />
+              <Route path="edit" element={<ListAccount/>} />
             </Route>
 
             <Route path="history" element={<History />} >
